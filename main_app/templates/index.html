@@ -11,13 +11,15 @@
 <body>
     <h1>Wish List Items</h1>
     <div>
-        {% if items %}
-
+        {% if item_list|length == 0 %}
+            <h3>No Wish Items Exist</h3>
+            <hr>
         {% else %}
-        <h3>No Wish Items Exist</h3>
-        <hr>
+        
+        
         {% endif %}
     </div>
+    <input type="submit" class="btn" value="Add A Wish Item">
     
 
 </body>
