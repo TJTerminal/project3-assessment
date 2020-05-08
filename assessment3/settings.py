@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'assessment3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'assessment3'),
+        'NAME': 'assessment3',
     }
 }
 
