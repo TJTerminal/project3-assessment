@@ -15,7 +15,20 @@
             <h3>No Wish Items Exist</h3>
             <hr>
         {% else %}
-        
+            <table>
+                <tead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Delete</th>
+                    </tr>
+                </tead>
+                <tbody>
+                    <tr>
+                        <td>{{ item.description}}</td>
+                        <td>{{ item.delete}}</td>
+                    </tr>
+                </tbody>
+            </table>
         
         {% endif %}
     </div>
