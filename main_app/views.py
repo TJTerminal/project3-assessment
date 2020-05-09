@@ -6,6 +6,7 @@ from django.views.generic.edit import CreateView, DeleteView
 
 def home(request):
     items = Item.objects.all()
+    print(items)
     return render(request, 'index.html', {'items': items})
 
 # def add(request):
@@ -14,8 +15,8 @@ def home(request):
 class ItemCreate(CreateView):
     model = Item
     fields = '__all__'
-    success_url = ''
+    success_url = '/'
 
 class ItemDelete(DeleteView):
     model = Item
-    success_url = ''
+    success_url = '/'
