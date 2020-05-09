@@ -9,9 +9,6 @@ def home(request):
     print(items)
     return render(request, 'index.html', {'items': items})
 
-# def add(request):
-#     return render(request, 'add.html')
-
 class ItemCreate(CreateView):
     model = Item
     fields = '__all__'
